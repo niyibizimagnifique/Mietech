@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Mietech_backend": {
+      "main": "src/Mietech_backend/main.mo",
+      "type": "motoko"
+    },
+    "Mietech_frontend": {
+      "dependencies": [
+        "Mietech_backend"
+      ],
+      "source": [
+        "src/Mietech_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Mietech_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
